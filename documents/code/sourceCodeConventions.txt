@@ -1,0 +1,88 @@
+Source Code Style Conventions
+=============================
+
+General
+-------
+
+ - No global defines, functions, enumerations or variables
+ - Class methods that get or set attributes are named: getXyz() and setXyz()
+ - Header and source files include only other header files that are absolutely needed
+ - Exception handling and RTTI are not used
+ - Comments are in Javadoc style
+ - Intentation is 4 whitespaces, no tabs. Make sure you check the "Insert Spaces" option in the Visual C++ settings.
+
+Prefixes
+--------
+
+Static variables: g_ourGlobalFoo
+Member variables: m_myLocalBar
+Pointer variables: m_pMyLocalBar, pMyArgument
+
+Capitalization
+--------------
+
+Member variables and parameters: m_myVar, myParameter
+Classes: MyClass
+Methods: renderFooBar()
+Macros, const variables and enums: MAX_PATH_LENGTH
+
+Source filename
+---------------
+
+ - Each class has its own .cpp and .h file that match with the name of the class. 
+   Example: Class MyClass has two files named MyClass.cpp and MyClass.h
+ 
+ - Classes which end with Util are utility classes with only static access. Access
+   with MyUtil::foo(bar);
+   Example: MathUtil, StringUtil, ...
+   
+ - Classes which end with Manager are singletons. Access via
+   MyManager::getInstance()
+   Example: LogManager, ReflectionManager, ..
+   
+Include file layout
+-------------------
+PolarCamera.h:
+
+/** \class PolarCamera
+ * Third person camera (polar view)
+ *
+ * @author  Christian Ammann (mailto:xxxxxx@yyyyyy.com)
+ * @date 18/02/03
+ * @see  Camera, RawTransformGroup
+ *
+ * Copyright (C) GIANTS Software GmbH, Confidential, All Rights Reserved.
+ */
+
+#pragma once
+
+...
+
+
+Definition file layout
+----------------------
+PolarCamera.cpp:
+
+#include "PreCompiled.h"
+
+#include "PolarCamera.h"
+
+...
+
+
+
+Brace layout
+------------
+The Linux kernel brace style is used, which is a mixture between the Unix style 
+and the Allman style. 
+
+void foo()
+{
+  if (y > 0) {
+    y--;
+  } else {
+    while (y < 0) {
+      y++;
+    }
+  }
+}

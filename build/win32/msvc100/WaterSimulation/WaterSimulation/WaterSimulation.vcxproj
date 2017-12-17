@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DAF6357A-74D4-4666-BD40-2B962AB034FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WaterSimulation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../../../src;../../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/ENTRY:mainCRTStartup %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>../../../lib/libpng;../../../lib/glut;../../../lib/glew;../../../lib/fftw</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng15.lib;glut32.lib;glew32d.lib;libfftw3f-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../../../src;../../../include;../../../../../src/app/WaterSimulation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalOptions>/ENTRY:mainCRTStartup %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>../../../lib/libpng;../../../lib/glut;../../../lib/glew;../../../lib/fftw</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng15.lib;glew32d.lib;libfftw3f-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\FFTSimulation.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\ObjReader.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\PortScene.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\RigidBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\SkyBox.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\WaterScene.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\WaterShape.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\WaterSimulation.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\2d\PNGUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\io\LogManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\math\MathUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\math\Matrix4x4.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\math\Plane.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\math\Quaternion.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\math\Vector3.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\math\Vector4.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\util\DebugUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\base\util\SPUDMA.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\PreCompiled.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\Camera.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\FFTSimulation.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\ObjReader.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\PortScene.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\RigidBody.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\SkyBox.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\WaterScene.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\WaterShape.h" />
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\WaterSimulation.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\2d\ImageDesc.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\2d\PNGUtil.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\io\FileLogSink.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\io\ILogSink.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\io\LogManager.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\MathUtil.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\MathUtilFastVectorTransform.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\Matrix4x4.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\Plane.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\Quaternion.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\Vector3.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\math\Vector4.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\Platform.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\Prerequisites.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\util\DebugUtil.h" />
+    <ClInclude Include="..\..\..\..\..\src\base\util\SPUDMA.h" />
+    <ClInclude Include="..\..\..\..\..\src\Config.h" />
+    <ClInclude Include="..\..\..\..\..\src\PreCompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\bin\FFTFragmentShader.glsl" />
+    <None Include="..\..\..\..\..\bin\FFTVertexShader.glsl" />
+    <None Include="..\..\..\..\..\bin\SWEFragmentShader.glsl" />
+    <None Include="..\..\..\..\..\bin\SWEVertexShader.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

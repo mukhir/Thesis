@@ -1,0 +1,36 @@
+﻿Build started 01-Feb-15 11:33:31 PM.
+     1>Project "F:\Acads\Thesis\SVN_trunk\build\win32\msvc100\WaterSimulation\WaterSimulation\WaterSimulation.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\WaterSimulation.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../../../src /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\..\src\app\WaterSimulation\main.cpp
+         main.cpp
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(5): error C2143: syntax error : missing ';' before '*'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(9): error C2227: left of '->update' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(10): error C2227: left of '->renderScene' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(21): error C2227: left of '->m_windowHeight' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(22): error C2227: left of '->m_windowWidth' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(47): error C2227: left of '->pressNormalKey' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(52): error C2227: left of '->releaseNormalKey' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(57): error C2227: left of '->pressKey' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(62): error C2227: left of '->releaseKey' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(67): error C2227: left of '->mouseMoved' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(72): error C2227: left of '->mouseButton' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>f:\acads\thesis\svn_trunk\src\app\watersimulation\main.cpp(116): error C2061: syntax error : identifier 'WaterScene'
+     1>Done Building Project "F:\Acads\Thesis\SVN_trunk\build\win32\msvc100\WaterSimulation\WaterSimulation\WaterSimulation.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.91

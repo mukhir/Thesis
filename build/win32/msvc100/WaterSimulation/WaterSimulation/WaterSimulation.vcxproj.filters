@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Project">
+      <UniqueIdentifier>{61fd9c20-d0e8-4763-90c7-8483c25b8a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\io">
+      <UniqueIdentifier>{bf77600f-b9e7-43e5-840e-a7aee2893969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\math">
+      <UniqueIdentifier>{f5643ffc-e211-4011-9040-f5b9fd4fb0f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\util">
+      <UniqueIdentifier>{9996e435-7cce-49db-a78f-ead1ae1653ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\2d">
+      <UniqueIdentifier>{8e702644-e86e-49d1-8be5-8ea5a29dc2b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\WaterScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\PreCompiled.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\io\LogManager.cpp">
+      <Filter>Project\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\math\MathUtil.cpp">
+      <Filter>Project\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\math\Matrix4x4.cpp">
+      <Filter>Project\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\math\Plane.cpp">
+      <Filter>Project\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\math\Quaternion.cpp">
+      <Filter>Project\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\math\Vector3.cpp">
+      <Filter>Project\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\math\Vector4.cpp">
+      <Filter>Project\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\util\DebugUtil.cpp">
+      <Filter>Project\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\util\SPUDMA.cpp">
+      <Filter>Project\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\base\2d\PNGUtil.cpp">
+      <Filter>Project\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\SkyBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\WaterSimulation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\WaterShape.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\FFTSimulation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\RigidBody.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\ObjReader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\app\WaterSimulation\PortScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\WaterScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\Camera.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Config.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\PreCompiled.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\io\FileLogSink.h">
+      <Filter>Project\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\io\ILogSink.h">
+      <Filter>Project\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\io\LogManager.h">
+      <Filter>Project\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\MathUtil.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\MathUtilFastVectorTransform.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\Matrix4x4.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\Plane.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\Quaternion.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\Vector3.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\math\Vector4.h">
+      <Filter>Project\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\util\DebugUtil.h">
+      <Filter>Project\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\util\SPUDMA.h">
+      <Filter>Project\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\Platform.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\Prerequisites.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\2d\ImageDesc.h">
+      <Filter>Project\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\base\2d\PNGUtil.h">
+      <Filter>Project\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\SkyBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\WaterSimulation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\WaterShape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\FFTSimulation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\RigidBody.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\ObjReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\app\WaterSimulation\PortScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\bin\FFTVertexShader.glsl">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\..\..\..\bin\SWEVertexShader.glsl">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\..\..\..\bin\FFTFragmentShader.glsl">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\..\..\..\bin\SWEFragmentShader.glsl">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
